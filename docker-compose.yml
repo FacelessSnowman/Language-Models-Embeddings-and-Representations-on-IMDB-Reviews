@@ -1,0 +1,14 @@
+services:
+  dsa4213:
+    build: .
+    image: dsa4213-a1
+    # Mount the project so code edits take effect without rebuilding, and
+    # data/ (incl. the kagglehub download cache) and outputs/ persist on the host.
+    volumes:
+      - ./:/app
+    environment:
+      - QUICK=${QUICK:-0}
+      # Only needed if kagglehub asks for authentication:
+      - KAGGLE_USERNAME=${KAGGLE_USERNAME:-}
+      - KAGGLE_KEY=${KAGGLE_KEY:-}
+    command: python run_all.py

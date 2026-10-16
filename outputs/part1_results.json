@@ -1,0 +1,75 @@
+{
+  "hardware": {
+    "platform": "Windows-11-10.0.26300-SP0",
+    "processor": "Intel64 Family 6 Model 186 Stepping 3, GenuineIntel",
+    "tensorflow": "2.18.0",
+    "gpus": []
+  },
+  "results": [
+    {
+      "model": "trigram (interp.)",
+      "test_ce": 4.8936310000121015,
+      "test_ppl": 133.43720598268968,
+      "test_tokens": 307996,
+      "trainable_params": 1801098,
+      "frozen_params": 0,
+      "total_params": 1801098,
+      "train_time_s": 9.589948499997263,
+      "epochs_run": null,
+      "best_epoch": null,
+      "infer_time_s": 0.6651949000079185,
+      "tokens_per_s": 463016.1776591096,
+      "gen_s_per_token": 0.0004720646666828543,
+      "lambdas": [
+        0.2,
+        0.45,
+        0.35000000000000003
+      ]
+    },
+    {
+      "model": "rnn",
+      "test_ce": 4.683727789699886,
+      "test_ppl": 108.17256647810619,
+      "test_tokens": 307996,
+      "infer_time_s": 25.81070410000393,
+      "tokens_per_s": 11932.878654013668,
+      "trainable_params": 3661392,
+      "frozen_params": 0,
+      "total_params": 3661392,
+      "train_time_s": 2842.639289300001,
+      "epochs_run": 10,
+      "best_epoch": 10,
+      "gen_s_per_token": 0.05983707800003079
+    },
+    {
+      "model": "lstm",
+      "test_ce": 4.804968861456398,
+      "test_ppl": 122.11568845728975,
+      "test_tokens": 307996,
+      "infer_time_s": 34.2787066000019,
+      "tokens_per_s": 8985.053129162783,
+      "trainable_params": 3935568,
+      "frozen_params": 0,
+      "total_params": 3935568,
+      "train_time_s": 3507.3337518000044,
+      "epochs_run": 10,
+      "best_epoch": 10,
+      "gen_s_per_token": 0.053299620666657575
+    },
+    {
+      "model": "transformer",
+      "test_ce": 4.511563385766373,
+      "test_ppl": 91.06407555978959,
+      "test_tokens": 307996,
+      "infer_time_s": 19.120378699997673,
+      "tokens_per_s": 16108.258357876432,
+      "trainable_params": 2207812,
+      "frozen_params": 0,
+      "total_params": 2207812,
+      "train_time_s": 2058.6664447999938,
+      "epochs_run": 10,
+      "best_epoch": 10,
+      "gen_s_per_token": 0.038532962000075104
+    }
+  ]
+}

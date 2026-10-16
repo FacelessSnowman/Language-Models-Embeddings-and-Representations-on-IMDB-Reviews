@@ -1,0 +1,7 @@
+data/
+outputs/
+outputs_quick/
+__pycache__/
+*.pyc
+.venv/
+*.pdf

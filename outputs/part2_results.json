@@ -1,0 +1,101 @@
+{
+  "results": [
+    {
+      "model": "lstm (random, trainable)",
+      "test_ce": 4.804968861456398,
+      "test_ppl": 122.11568845728975,
+      "test_tokens": 307996,
+      "infer_time_s": 34.2787066000019,
+      "tokens_per_s": 8985.053129162783,
+      "trainable_params": 3935568,
+      "frozen_params": 0,
+      "total_params": 3935568,
+      "train_time_s": 3507.3337518000044,
+      "epochs_run": 10,
+      "best_epoch": 10,
+      "gen_s_per_token": 0.053299620666657575,
+      "val_loss_increases": 0,
+      "final_train_val_gap": -0.025275230407714844,
+      "mean_epoch_time_s": 350.7206009799993
+    },
+    {
+      "model": "lstm (own skip-gram, frozen)",
+      "test_ce": 4.80888737413341,
+      "test_ppl": 122.59513908376401,
+      "test_tokens": 307996,
+      "infer_time_s": 33.09419180000259,
+      "tokens_per_s": 9306.648183503181,
+      "trainable_params": 2935568,
+      "frozen_params": 1000000,
+      "total_params": 3935568,
+      "train_time_s": 3291.7797285999986,
+      "epochs_run": 10,
+      "best_epoch": 10,
+      "gen_s_per_token": 0.047932487333309834,
+      "val_loss_increases": 0,
+      "final_train_val_gap": -0.05718851089477539,
+      "mean_epoch_time_s": 329.16035796999785
+    },
+    {
+      "model": "lstm (GloVe, frozen)",
+      "test_ce": 4.884392191210986,
+      "test_ppl": 132.21008245794582,
+      "test_tokens": 307996,
+      "infer_time_s": 32.403979900002014,
+      "tokens_per_s": 9504.881837060419,
+      "trainable_params": 2935568,
+      "frozen_params": 1000000,
+      "total_params": 3935568,
+      "train_time_s": 3275.108439200005,
+      "epochs_run": 10,
+      "best_epoch": 10,
+      "gen_s_per_token": 0.048060940666667495,
+      "val_loss_increases": 0,
+      "final_train_val_gap": -0.06311511993408203,
+      "mean_epoch_time_s": 327.49866908999974
+    }
+  ],
+  "embedding_cost": {
+    "skipgram_train_time_s": 38.3836403000023,
+    "glove_load_time_s": 4.825282299992978
+  },
+  "w2v_coverage": {
+    "type_coverage": 1.0,
+    "token_coverage": 1.0,
+    "n_missing_types": 0,
+    "example_missing": []
+  },
+  "glove_coverage": {
+    "type_coverage": 0.9972989195678271,
+    "token_coverage": 0.9995531883478026,
+    "n_missing_types": 27,
+    "example_missing": [
+      "\u0096",
+      "'the",
+      "\u00b4",
+      "\u0097",
+      "'a",
+      "'nt",
+      "\u0091",
+      "'i",
+      "'t",
+      "'hara",
+      "'neill",
+      "'horror",
+      "imho",
+      "'toole",
+      "'brien",
+      "'clock",
+      "'mon",
+      "'so",
+      "'oh",
+      "mordrid",
+      "'bad",
+      "'it",
+      "'amato",
+      "feinstone",
+      "cheezy"
+    ]
+  },
+  "missing_init": "N(0, std of found vectors), frozen; <pad> = 0"
+}

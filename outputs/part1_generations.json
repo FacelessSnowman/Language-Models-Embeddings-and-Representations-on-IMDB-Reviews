@@ -1,0 +1,30 @@
+{
+  "trigram": {
+    "this movie was": "a movie . . \" the film . one of the . . . . i was able to me . i 've ever seen in a big disappointment .",
+    "the acting in this film": ", they seem to make this short film is very the film is one of many people . the film was the best . his way with the end of",
+    "i would not recommend": "that it was the only one even on the film . i am . the to - , be prepared for the next big fan of the \" , and",
+    "the story is about": "a young woman , is , and there 's a great , and a little girl , a lot like and , of - the film is n't quite understand",
+    "my favorite part was": "the film is a very nice to be a bad . to the very first saw this film is an all . just so stupid and i could be a"
+  },
+  "rnn": {
+    "this movie was": "actually directed by the bad guys who saw it in a year , and i am sure we watch it . i have to admit that this film is a",
+    "the acting in this film": "is great because the same plot is so bad and the acting was bad . to be the worst movie i 've ever seen for such a - , yet",
+    "i would not recommend": "this film and then i 'm a fan of the movie , i 'm going on the movie that i sat through . it 's not even more than the",
+    "the story is about": "a group of the eldest family - to his face , the only is the only person who can really give him a fortune into a family , and is",
+    "my favorite part was": "the worst film i have ever seen . i would not recommend it off for the viewer , which would have been for anyone who was n't going on the"
+  },
+  "lstm": {
+    "this movie was": "also a great film and a lot of humor , i watched this film . i was hoping to watch it , the first of one of my own was",
+    "the acting in this film": "is one of the worst movies ever . it 's worth watching this film . just even that the plot is so bad that is n't going to keep some",
+    "i would not recommend": "this film . it was the only one of the movie . it has a half - of life , but it is a good movie . i 've seen",
+    "the story is about": "one of the best of the \" \" \" the novel \" . unfortunately it 's a bit of these movies that are what they are . at his character",
+    "my favorite part was": "a really bad movie for this movie . . . . . . it 's just really worth you watch it . although i think she is great as the"
+  },
+  "transformer": {
+    "this movie was": "very good . the problem i saw a bit of a very good movie . the acting was horrible . the story is the biggest disappointment . there are a",
+    "the acting in this film": "is extremely great and the cast of a very little boy and was n't really well . it is a good story , for my god a good story .",
+    "i would not recommend": "this film to the same time . i have seen the movie , and i never seen this movie , i just sat through it and watched it . i",
+    "the story is about": "a film . the acting is superb , and the only reason why i saw this movie . the characters are well done and the first 20 years , but",
+    "my favorite part was": "the second two main brothers show and the whole movie is n't quite quite good . i do n't think that is i thought it was n't a good movie"
+  }
+}

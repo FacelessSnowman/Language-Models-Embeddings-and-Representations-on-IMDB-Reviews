@@ -1,0 +1,200 @@
+{
+  "random_trained": {
+    "good": [
+      "great",
+      "decent",
+      "bad",
+      "horrible",
+      "lousy",
+      "amazing"
+    ],
+    "terrible": [
+      "horrible",
+      "horrid",
+      "awful",
+      "dreadful",
+      "atrocious",
+      "lousy"
+    ],
+    "actor": [
+      "actress",
+      "girlfriend",
+      "photographer",
+      "wrestler",
+      "widow",
+      "kid"
+    ],
+    "movie": [
+      "film",
+      "flick",
+      "ending",
+      "show",
+      "script",
+      "book"
+    ],
+    "funny": [
+      "boring",
+      "predictable",
+      "unrealistic",
+      "laughable",
+      "stupid",
+      "hilarious"
+    ],
+    "boring": [
+      "predictable",
+      "incoherent",
+      "entertaining",
+      "funny",
+      "absurd",
+      "dull"
+    ],
+    "plot": [
+      "story",
+      "drama",
+      "premise",
+      "storyline",
+      "comedy",
+      "concept"
+    ],
+    "music": [
+      "cinematography",
+      "animation",
+      "dialog",
+      "framing",
+      "photography",
+      "editing"
+    ]
+  },
+  "skipgram": {
+    "good": [
+      "decent",
+      "great",
+      "bad",
+      "fine",
+      "cool",
+      "passable"
+    ],
+    "terrible": [
+      "horrible",
+      "awful",
+      "dreadful",
+      "horrid",
+      "horrendous",
+      "lousy"
+    ],
+    "actor": [
+      "comedian",
+      "actress",
+      "versatile",
+      "playwright",
+      "role",
+      "performance"
+    ],
+    "movie": [
+      "film",
+      "miniseries",
+      "prequel",
+      "monstrosity",
+      "previews",
+      "atrocity"
+    ],
+    "funny": [
+      "hilarious",
+      "amusing",
+      "scary",
+      "witty",
+      "unintentionally",
+      "entertaining"
+    ],
+    "boring": [
+      "dull",
+      "pointless",
+      "tedious",
+      "predictable",
+      "depressing",
+      "unfunny"
+    ],
+    "plot": [
+      "storyline",
+      "story",
+      "convoluted",
+      "dialogue",
+      "implausible",
+      "flimsy"
+    ],
+    "music": [
+      "soundtrack",
+      "songs",
+      "classical",
+      "scenery",
+      "colour",
+      "cinematography"
+    ]
+  },
+  "glove": {
+    "good": [
+      "better",
+      "sure",
+      "really",
+      "kind",
+      "very",
+      "we"
+    ],
+    "terrible": [
+      "horrible",
+      "awful",
+      "dreadful",
+      "horrendous",
+      "horrific",
+      "tragic"
+    ],
+    "actor": [
+      "actress",
+      "comedian",
+      "starring",
+      "starred",
+      "actors",
+      "filmmaker"
+    ],
+    "movie": [
+      "film",
+      "movies",
+      "films",
+      "hollywood",
+      "comedy",
+      "drama"
+    ],
+    "funny": [
+      "hilarious",
+      "amusing",
+      "weird",
+      "scary",
+      "fun",
+      "witty"
+    ],
+    "boring": [
+      "tedious",
+      "dull",
+      "bored",
+      "funny",
+      "stupid",
+      "downright"
+    ],
+    "plot": [
+      "plots",
+      "plotting",
+      "conspiracy",
+      "story",
+      "plotted",
+      "connection"
+    ],
+    "music": [
+      "musical",
+      "songs",
+      "dance",
+      "pop",
+      "recording",
+      "folk"
+    ]
+  }
+}

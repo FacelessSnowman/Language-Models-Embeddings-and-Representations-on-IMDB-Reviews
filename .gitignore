@@ -1,0 +1,15 @@
+# data you don't have permission to redistribute (downloaded by the code)
+data/
+# local environments and caches
+.venv/
+__pycache__/
+*.pyc
+# smoke-test leftovers
+outputs_quick/
+quick_run.log
+# large, regenerable cache
+outputs/data_cache.pkl
+
+# course material and regenerable model weights
+Assignment1_2026.pdf
+outputs/models/

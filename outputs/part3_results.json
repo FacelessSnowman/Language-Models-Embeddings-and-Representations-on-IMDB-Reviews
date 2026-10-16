@@ -1,0 +1,399 @@
+{
+  "results": [
+    {
+      "representation": "tfidf_bow (reference)",
+      "lm": null,
+      "pooling": null,
+      "accuracy": 0.8888,
+      "macro_f1": 0.8887401154797558,
+      "best_C": 10.0,
+      "cv_accuracy": 0.8666,
+      "confusion": [
+        [
+          1082,
+          151
+        ],
+        [
+          127,
+          1140
+        ]
+      ]
+    },
+    {
+      "representation": "rnn_mean",
+      "lm": "rnn",
+      "pooling": "mean",
+      "lm_test_ppl": 108.17256647810619,
+      "dim": 256,
+      "accuracy": 0.6936,
+      "macro_f1": 0.693599215613992,
+      "best_C": 0.1,
+      "cv_accuracy": 0.6864000000000001,
+      "confusion": [
+        [
+          869,
+          364
+        ],
+        [
+          402,
+          865
+        ]
+      ]
+    },
+    {
+      "representation": "rnn_last",
+      "lm": "rnn",
+      "pooling": "last",
+      "lm_test_ppl": 108.17256647810619,
+      "dim": 256,
+      "accuracy": 0.5364,
+      "macro_f1": 0.5362984308082843,
+      "best_C": 0.01,
+      "cv_accuracy": 0.5438000000000001,
+      "confusion": [
+        [
+          689,
+          544
+        ],
+        [
+          615,
+          652
+        ]
+      ]
+    },
+    {
+      "representation": "lstm_mean",
+      "lm": "lstm",
+      "pooling": "mean",
+      "lm_test_ppl": 122.11568845728975,
+      "dim": 256,
+      "accuracy": 0.6976,
+      "macro_f1": 0.6975876131886363,
+      "best_C": 1.0,
+      "cv_accuracy": 0.6864,
+      "confusion": [
+        [
+          864,
+          369
+        ],
+        [
+          387,
+          880
+        ]
+      ]
+    },
+    {
+      "representation": "lstm_last",
+      "lm": "lstm",
+      "pooling": "last",
+      "lm_test_ppl": 122.11568845728975,
+      "dim": 256,
+      "accuracy": 0.5464,
+      "macro_f1": 0.5463927422838766,
+      "best_C": 0.1,
+      "cv_accuracy": 0.5448,
+      "confusion": [
+        [
+          688,
+          545
+        ],
+        [
+          589,
+          678
+        ]
+      ]
+    },
+    {
+      "representation": "transformer_mean",
+      "lm": "transformer",
+      "pooling": "mean",
+      "lm_test_ppl": 91.06407555978959,
+      "dim": 100,
+      "accuracy": 0.752,
+      "macro_f1": 0.7519771422134264,
+      "best_C": 0.01,
+      "cv_accuracy": 0.7444,
+      "confusion": [
+        [
+          928,
+          305
+        ],
+        [
+          315,
+          952
+        ]
+      ]
+    },
+    {
+      "representation": "transformer_last",
+      "lm": "transformer",
+      "pooling": "last",
+      "lm_test_ppl": 91.06407555978959,
+      "dim": 100,
+      "accuracy": 0.7376,
+      "macro_f1": 0.7375186937905885,
+      "best_C": 0.1,
+      "cv_accuracy": 0.7,
+      "confusion": [
+        [
+          944,
+          289
+        ],
+        [
+          367,
+          900
+        ]
+      ]
+    },
+    {
+      "representation": "lstm_w2v_mean",
+      "lm": "lstm_w2v",
+      "pooling": "mean",
+      "lm_test_ppl": 122.59513908376401,
+      "dim": 256,
+      "accuracy": 0.7908,
+      "macro_f1": 0.7906670652130929,
+      "best_C": 1.0,
+      "cv_accuracy": 0.7830000000000001,
+      "confusion": [
+        [
+          957,
+          276
+        ],
+        [
+          247,
+          1020
+        ]
+      ]
+    },
+    {
+      "representation": "lstm_w2v_last",
+      "lm": "lstm_w2v",
+      "pooling": "last",
+      "lm_test_ppl": 122.59513908376401,
+      "dim": 256,
+      "accuracy": 0.606,
+      "macro_f1": 0.6059540384790483,
+      "best_C": 0.01,
+      "cv_accuracy": 0.5917999999999999,
+      "confusion": [
+        [
+          771,
+          462
+        ],
+        [
+          523,
+          744
+        ]
+      ]
+    },
+    {
+      "representation": "lstm_glove_mean",
+      "lm": "lstm_glove",
+      "pooling": "mean",
+      "lm_test_ppl": 132.21008245794582,
+      "dim": 256,
+      "accuracy": 0.7624,
+      "macro_f1": 0.762332920843579,
+      "best_C": 0.1,
+      "cv_accuracy": 0.742,
+      "confusion": [
+        [
+          932,
+          301
+        ],
+        [
+          293,
+          974
+        ]
+      ]
+    },
+    {
+      "representation": "lstm_glove_last",
+      "lm": "lstm_glove",
+      "pooling": "last",
+      "lm_test_ppl": 132.21008245794582,
+      "dim": 256,
+      "accuracy": 0.5616,
+      "macro_f1": 0.5614641591379346,
+      "best_C": 0.01,
+      "cv_accuracy": 0.5654,
+      "confusion": [
+        [
+          724,
+          509
+        ],
+        [
+          587,
+          680
+        ]
+      ]
+    }
+  ],
+  "ranking": {
+    "mean": {
+      "by_lm_ppl": [
+        "transformer",
+        "rnn",
+        "lstm",
+        "lstm_w2v",
+        "lstm_glove"
+      ],
+      "by_accuracy": [
+        "lstm_w2v",
+        "lstm_glove",
+        "transformer",
+        "lstm",
+        "rnn"
+      ],
+      "spearman_ppl_vs_acc": 0.6,
+      "p_value": 0.28475697986529375
+    },
+    "last": {
+      "by_lm_ppl": [
+        "transformer",
+        "rnn",
+        "lstm",
+        "lstm_w2v",
+        "lstm_glove"
+      ],
+      "by_accuracy": [
+        "transformer",
+        "lstm_w2v",
+        "lstm_glove",
+        "lstm",
+        "rnn"
+      ],
+      "spearman_ppl_vs_acc": -0.09999999999999999,
+      "p_value": 0.8728885715695383
+    }
+  },
+  "errors": {
+    "best": "lstm_w2v_mean",
+    "contrast": "rnn_last",
+    "examples": {
+      "lstm_w2v_mean wrong": {
+        "count": 523,
+        "samples": [
+          {
+            "label": 0,
+            "pred_best": 1,
+            "pred_contrast": 0,
+            "n_tokens": 128,
+            "text": "After viewing the film, I was truly shocked to see such a high rating on IMDb.  'The Fantastic Mr. Fox' is an adaption of a beloved children's classic, portraying the story of the smooth, slick protagonist Mr. Fox (or 'Foxy') as he attempts one 'last' heist to steal from the dreaded Boggins, Bunce a"
+          },
+          {
+            "label": 1,
+            "pred_best": 0,
+            "pred_contrast": 1,
+            "n_tokens": 128,
+            "text": "This comic book style film is funny, has nicely paced action and a great futuristic style to it. Writer Steven de Souza, who also wrote Commando, gives Arnie plenty of lines to dish out: \"Send me a copy,\" after signing a contract and stabbing a pen into the lawyers back; \"What a pain in the neck,\" a"
+          },
+          {
+            "label": 0,
+            "pred_best": 1,
+            "pred_contrast": 1,
+            "n_tokens": 128,
+            "text": "I caught this stink bomb of a movie recently on a cable channel, and was reminded of how terrible I thought it was in 1980 when first released. Many reviewers out there aren't old enough to remember the enormous hype that surrounded this movie and the struggle between Stanley Kubrick and Steven King"
+          },
+          {
+            "label": 1,
+            "pred_best": 0,
+            "pred_contrast": 0,
+            "n_tokens": 128,
+            "text": "Two city guys are driving through Hicksville USA when a rusty monster truck suddenly appears and repeatedly attempts to run them off the road.Having picked up a mysterious blonde hitchhiker,they pull up at a truck-stop full of redneck amputees,one of whom warns them of 'the demon out there'. But the"
+          },
+          {
+            "label": 0,
+            "pred_best": 1,
+            "pred_contrast": 0,
+            "n_tokens": 128,
+            "text": "I've read comments that you shouldn't watch this film if you're looking for stirring Shakespearian dialogue. This is true, unfortunately, because all the stirring dialogue, this wonderful play contains, has been cut, and replaced with songs. I've read this play, and recently was lucky enough to see "
+          }
+        ]
+      },
+      "lstm_w2v_mean right, rnn_last wrong": {
+        "count": 885,
+        "samples": [
+          {
+            "label": 1,
+            "pred_best": 1,
+            "pred_contrast": 0,
+            "n_tokens": 128,
+            "text": "Well the main reason I tuned in to watch this film is because it was done by Trey Parker and Matt Stone of South Park fame. However as soon as the film started the laughs started erupting from my belly. From the subtle gestures towards a joke, to the blatant toilet humour throughout, along with a co"
+          },
+          {
+            "label": 1,
+            "pred_best": 1,
+            "pred_contrast": 0,
+            "n_tokens": 128,
+            "text": "I have no idea what people are complaining about. I saw this movie yesterday and I really liked it. Stone once again delivered a great character. She was just as good as she was in the first Basic Instinct. She still has those smart but tricky answers. Although Sharon may be 48 years old... she look"
+          },
+          {
+            "label": 1,
+            "pred_best": 1,
+            "pred_contrast": 0,
+            "n_tokens": 128,
+            "text": "This is film that was actually recommended to me by my dentist, and am I glad he did! The blend of British humor (should I say, Humour?) and the reality of a lost, middle-aged widow trying to maintain her lifestyle were a hoot. Add to that mix the reality of what it takes to actually grow pot (those"
+          },
+          {
+            "label": 1,
+            "pred_best": 1,
+            "pred_contrast": 0,
+            "n_tokens": 128,
+            "text": "This tough-to-see little picture played at the Mods & Rockers 2007 festival. It is a wonderful and loving look at Harry Nilsson, using many famous faces who sit for interviews, rarely seen TV performances and behind-the-scenes footage of Nilsson at work. There's even a few shots from \"Son Of Dracula"
+          },
+          {
+            "label": 1,
+            "pred_best": 1,
+            "pred_contrast": 0,
+            "n_tokens": 125,
+            "text": "Anytime I'm not giving 150% to my dreams or my goals I think of Mark Borchardt, the real-life subject of \"American Movie\". Mark's dogged persistence at having his first feature film produced and shot is so captivating that it will have you laughing, shaking your head with sadness and rooting for him"
+          }
+        ]
+      },
+      "lstm_w2v_mean wrong, rnn_last right": {
+        "count": 249,
+        "samples": [
+          {
+            "label": 1,
+            "pred_best": 0,
+            "pred_contrast": 1,
+            "n_tokens": 128,
+            "text": "This is probably the best of all of the Star Wars movies.   The starting point of the movie was almost like Episode IV--spacey cabaret music and thoughts of a cabaret place, where the seriousness of mobster Jabba the Hutt was getting even more serious. He ordered Luke to die in a basement pit by the"
+          },
+          {
+            "label": 0,
+            "pred_best": 1,
+            "pred_contrast": 0,
+            "n_tokens": 84,
+            "text": "There is a reason why this made for British TV movie only appeared at the 1977 Toronto Film Festival. It is dull, plodding and lacking in suspense.  Peter O\u00d5Toole\u00d5s diffident performance and the appearance of playwright Harold Pinter are the only elements of interest.  Note : Some British film fans "
+          },
+          {
+            "label": 1,
+            "pred_best": 0,
+            "pred_contrast": 1,
+            "n_tokens": 128,
+            "text": "Released as Zentropa in North America to avoid confusion with Agniezska Holland's own Holocaust film Europa Europa, this third theatrical feature by a filmmaker who never ceases to surprise, inspire or downright shock is a bizarre, nostalgic, elaborate film about a naive American in Germany shortly "
+          },
+          {
+            "label": 0,
+            "pred_best": 1,
+            "pred_contrast": 0,
+            "n_tokens": 128,
+            "text": "John Candy. Need we say more? He is the main reason you should see this film. Most people don't realize how gifted he was as an actor. Witness him changing from poor slob to horny jerk. Just a simple(subtle) facial change and off we go. There are many great bits in this movie and many really dumb bi"
+          },
+          {
+            "label": 0,
+            "pred_best": 1,
+            "pred_contrast": 0,
+            "n_tokens": 128,
+            "text": "This could have been a great movie with plenty of educational potential for teachers around the world about evolution, biology, the creative work in science, research and Darwin's life, but it is not.  The screenplay is mostly historically inaccurate and transforms a true story into a Mexican soup-o"
+          }
+        ]
+      }
+    },
+    "error_rate_truncated_reviews": 0.22573044297832234,
+    "error_rate_short_reviews": 0.1164021164021164
+  }
+}
